@@ -37,3 +37,12 @@ Remove-Item -Recurse -Force .git
 Now verify Existing Git is remove or not:
 ls -a
 
+main branch pull
+git pull origin master --rebase
+
+main branch push
+git push origin master
+
+git push origin master --force
+Warning: Ye remote repo ke existing commits ko overwrite karega 
+Agar tumhare remote me important code hai → lose ho sakta hai
