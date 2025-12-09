@@ -19,6 +19,13 @@ Advance features
 Code Quality
 Etc
 
+Categories of Data types
+Primitive types --> number,string,bigInt,Boolean,null,undefined
+Object types 
+Special types --> any,unknown,void,never --> void kuch return nhi krrha hay --> never jo hay wo kbhi kuch return nhi krrha hay
+funtion types --> Define the type of a function
+Advance types --> union,intersection,Enum,Type Alias,Literal Types
+
 locally Installation
 npm install typescript --save-dev
 
@@ -46,3 +53,4 @@ git push origin master
 git push origin master --force
 Warning: Ye remote repo ke existing commits ko overwrite karega 
 Agar tumhare remote me important code hai → lose ho sakta hai
+
