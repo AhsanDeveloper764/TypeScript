@@ -1,0 +1,39 @@
+Typescript is superset of Javascript 
+Almost similar to Javascript 
+and extra features and functionality 
+
+Why Typescript 
+Static Typing or Define Data type 
+Improve Code maintainability
+Advance features
+Code Quality
+
+Important Typescript features
+Define Data types 
+Interfaces
+Decorators
+Generics
+Namespace
+Type Inference
+Advance features
+Code Quality
+Etc
+
+locally Installation
+npm install typescript --save-dev
+
+Globally Installation
+npm install -g typescript
+
+Code Compiler js to ts 
+npx tsc file_Name
+
+automatically compile command
+npx tsc file_Name --watch
+
+Existing folder mai say git ko delete krna hay
+Remove-Item -Recurse -Force .git
+
+Now verify Existing Git is remove or not:
+ls -a
+
