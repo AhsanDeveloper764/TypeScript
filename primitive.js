@@ -20,3 +20,25 @@ var age = 20;
 var data = age.toString();
 var info = "my name is ".concat(str, " and my age is ").concat(age);
 console.log(info);
+// Symbol data types
+var vaL1 = Symbol();
+var vaL2 = Symbol();
+console.log(typeof vaL2);
+// console.log(typeof vaL1==vaL2);
+var handle = function () {
+    var nameInput = document.getElementById("username");
+    var name = nameInput.value;
+    var emailInput = document.getElementById("email");
+    var email = emailInput.value;
+    var numInput = document.getElementById("number");
+    var Num = numInput.value;
+    console.log(name, email, Num);
+};
+// Define Array in TypeScript
+var number = [1, 3, 4, 5, 5, 6];
+var name = ["Ahsan", "Ali"];
+// Tuple
+// const value : readonly [number,string,boolean] = [232,"ahsan",true]
+var value = [232, "ahsan", true];
+value.push("ali");
+console.log(value);

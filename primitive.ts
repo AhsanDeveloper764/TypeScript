@@ -26,3 +26,36 @@ const age:number = 20
 const data = age.toString();
 let info:string = `my name is ${str} and my age is ${age}`
 console.log(info);
+
+
+// Symbol data types
+const vaL1 = Symbol();
+const vaL2 = Symbol();
+
+console.log(typeof vaL2);
+// console.log(typeof vaL1==vaL2);
+
+const handle = () => {
+    const nameInput = document.getElementById("username") as HTMLInputElement
+    const name:string=nameInput.value
+
+    const emailInput = document.getElementById("email") as HTMLInputElement
+    const email:any=emailInput.value
+
+    const numInput = document.getElementById("number") as HTMLInputElement
+    const Num:any=numInput.value
+
+    console.log(name,email,Num);
+} 
+
+// Define Array in TypeScript
+
+const number : number[] = [1,3,4,5,5,6];
+const name : Array<string> = ["Ahsan","Ali"];
+
+// Tuple
+// const value : readonly [number,string,boolean] = [232,"ahsan",true]
+const value :  [number,string,boolean] = [232,"ahsan",true]
+value.push("ali")
+console.log(value);
+

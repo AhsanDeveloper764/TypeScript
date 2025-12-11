@@ -27,7 +27,7 @@ funtion types --> Define the type of a function
 Advance types --> union,intersection,Enum,Type Alias,Literal Types
 
 installation 
-npx tsc --init for Config files 
+npx tsc --init for Configuration files 
 
 locally Installation
 npm install typescript --save-dev
@@ -62,3 +62,28 @@ null or undefined dono prmitive hotee hay means prefined hotee hein
 inko user nhi bnata hay null mtlb koi bhee value nhi ahagee complete 
 absence hoga undefined mtlb variable assign tw krdiya jata hay 
 but usmay koi value assign nhee hotee hay 
+
+
+Types Error 
+if you have assign name variable data type string on the other 
+hand same variable have assign number data type so Error return
+data types mismatch
+
+Why BigInt 
+In Js and Ts Number has a maximum safe integer  
+limit check_code = Number.MAX_SAFE_INTEGER = 2^53-1
+output ----> 9007199254740991
+
+Symbol Data Types
+ye 1 alag hee data type hay jo kay har bar 1 unique value ko hee generate krta hay
+
+Array in Ts
+Collection of Same Data Types
+Pre-Define Data types
+
+Tupe in Ts
+have fixed length
+order colection of different data Types
+Each element in a tuple has a specific type
+
+Array is homogneous,dynamic , tuple is hetrogenous,fixed 
