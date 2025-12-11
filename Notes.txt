@@ -87,3 +87,5 @@ order colection of different data Types
 Each element in a tuple has a specific type
 
 Array is homogneous,dynamic , tuple is hetrogenous,fixed 
+
+Object Data Type in Ts

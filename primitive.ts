@@ -35,6 +35,7 @@ const vaL2 = Symbol();
 console.log(typeof vaL2);
 // console.log(typeof vaL1==vaL2);
 
+// Non-Primitive data type
 const handle = () => {
     const nameInput = document.getElementById("username") as HTMLInputElement
     const name:string=nameInput.value
@@ -48,14 +49,29 @@ const handle = () => {
     console.log(name,email,Num);
 } 
 
+// Non-Primitive data type
 // Define Array in TypeScript
-
 const number : number[] = [1,3,4,5,5,6];
 const name : Array<string> = ["Ahsan","Ali"];
 
+// Non-Primitive data type
 // Tuple
 // const value : readonly [number,string,boolean] = [232,"ahsan",true]
 const value :  [number,string,boolean] = [232,"ahsan",true]
 value.push("ali")
 console.log(value);
 
+// Non-Primitive data type
+const Userdata:{
+    name:string,
+    age:number,
+    company:string | undefined
+    // [key:string]:string | number | undefined
+}={
+    name:"Ahsan Ali",
+    age:21,
+    company:undefined
+}
+Userdata.company = "Fifth Thought"
+
+console.log(Userdata);
