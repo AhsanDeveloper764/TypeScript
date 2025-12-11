@@ -88,4 +88,9 @@ Each element in a tuple has a specific type
 
 Array is homogneous,dynamic , tuple is hetrogenous,fixed 
 
-Object Data Type in Ts
+Any and unknown data types is similar but unknown check the value before execution
+
+return Type funct in ts
+func ka return type kisi bhee data type mai hosakta hay 
+
+agar koi type auto detect hoti hay tw isko hum type refrence boltay hein 
