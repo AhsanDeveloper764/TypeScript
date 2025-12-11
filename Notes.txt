@@ -57,3 +57,8 @@ git push origin master --force
 Warning: Ye remote repo ke existing commits ko overwrite karega 
 Agar tumhare remote me important code hai → lose ho sakta hai
 
+Null and Undefined data types kya hotee hay 
+null or undefined dono prmitive hotee hay means prefined hotee hein 
+inko user nhi bnata hay null mtlb koi bhee value nhi ahagee complete 
+absence hoga undefined mtlb variable assign tw krdiya jata hay 
+but usmay koi value assign nhee hotee hay 
