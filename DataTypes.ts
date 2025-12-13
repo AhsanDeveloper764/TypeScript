@@ -29,10 +29,10 @@ console.log(info);
 
 
 // Symbol data types
-const vaL1 = Symbol();
-const vaL2 = Symbol();
+// const vaL1 = Symbol();
+// const vaL2 = Symbol();
 
-console.log(typeof vaL2);
+// console.log(typeof vaL2);
 // console.log(typeof vaL1==vaL2);
 
 // Non-Primitive data type
@@ -52,7 +52,7 @@ const handle = () => {
 // Non-Primitive data type
 // Define Array in TypeScript
 const number : number[] = [1,3,4,5,5,6];
-const name : Array<string> = ["Ahsan","Ali"];
+const NameA : Array<string> = ["Ahsan","Ali"];
 
 // Non-Primitive data type
 // Tuple
@@ -75,3 +75,9 @@ const Userdata:{
 Userdata.company = "Fifth Thought"
 
 console.log(Userdata);
+
+// Funtion 
+const abc = (item:number,price:number) => {
+    console.log(item * price);
+}
+abc(12,16)

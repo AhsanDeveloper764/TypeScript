@@ -94,3 +94,10 @@ return Type funct in ts
 func ka return type kisi bhee data type mai hosakta hay 
 
 agar koi type auto detect hoti hay tw isko hum type refrence boltay hein 
+
+Never Type
+“Ye function / variable kabhi bhi successfully value return hi nahi karega”
+Function hamesha error throw karta hai, ya
+Function infinite loop me chala jata hai, ya
+Code ka koi case logically impossible hai
+➡️ Ye bug catcher technique hai (VERY IMPORTANT for interviews)

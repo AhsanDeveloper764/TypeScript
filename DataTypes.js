@@ -21,9 +21,9 @@ var data = age.toString();
 var info = "my name is ".concat(str, " and my age is ").concat(age);
 console.log(info);
 // Symbol data types
-var vaL1 = Symbol();
-var vaL2 = Symbol();
-console.log(typeof vaL2);
+// const vaL1 = Symbol();
+// const vaL2 = Symbol();
+// console.log(typeof vaL2);
 // console.log(typeof vaL1==vaL2);
 // Non-Primitive data type
 var handle = function () {
@@ -38,7 +38,7 @@ var handle = function () {
 // Non-Primitive data type
 // Define Array in TypeScript
 var number = [1, 3, 4, 5, 5, 6];
-var name = ["Ahsan", "Ali"];
+var NameA = ["Ahsan", "Ali"];
 // Non-Primitive data type
 // Tuple
 // const value : readonly [number,string,boolean] = [232,"ahsan",true]
@@ -53,3 +53,8 @@ var Userdata = {
 };
 Userdata.company = "Fifth Thought";
 console.log(Userdata);
+// Funtion 
+var abc = function (item, price) {
+    console.log(item * price);
+};
+abc(12, 16);
