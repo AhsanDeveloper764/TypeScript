@@ -100,4 +100,16 @@ Never Type
 Function hamesha error throw karta hai, ya
 Function infinite loop me chala jata hai, ya
 Code ka koi case logically impossible hai
-➡️ Ye bug catcher technique hai (VERY IMPORTANT for interviews)
+Ye bug catcher technique hai (VERY IMPORTANT for interviews)
+
+Union Types:
+Union Data Types (TypeScript) — In short
+
+Union type ka matlab hota hai:
+ek variable ek se zyada types accept kar sakta hai
+Hum | (pipe) use karte hain.
+
+Interface Concept
+An interface is a way to define the structure of an Object,Funtion etc
+
+InterSection Type Allow you to Combine multiple types into one.

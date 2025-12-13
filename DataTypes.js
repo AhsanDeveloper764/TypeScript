@@ -58,3 +58,18 @@ var abc = function (item, price) {
     console.log(item * price);
 };
 abc(12, 16);
+// Union Types 
+var fun = function (id) {
+    console.log(id);
+};
+fun(123);
+fun("ahsan");
+var stdData = {
+    name: "Ahsan",
+    age: 21,
+    country: "pakistan"
+};
+var personDataA = { name: "Ahsan Ali" };
+var personDataB = { age: 21 };
+var personDataC = { name: "Ahsan", age: 21 };
+console.log(personDataA.name, personDataB.age, personDataC.name, personDataC.age);

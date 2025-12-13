@@ -81,3 +81,38 @@ const abc = (item:number,price:number) => {
     console.log(item * price);
 }
 abc(12,16)
+
+
+// Union Types 
+const fun = (id:string | number) => {
+    console.log(id);
+}
+fun(123)
+fun("ahsan")
+
+// Interface 
+interface Info{
+    name:string,
+    age:number
+}
+interface std extends Info{
+    country:string
+}
+const stdData:std={
+    name:"Ahsan",
+    age:21,
+    country:"pakistan"
+}
+
+// InterSection Type
+type A = {name:string}
+type B = {age:number}
+type C = A & B
+
+const personDataA:A={name:"Ahsan Ali"}
+const personDataB:B={age:21}
+const personDataC:C={name:"Ahsan",age:21}
+
+console.log(personDataA.name , personDataB.age , personDataC.name
+    ,personDataC.age
+);
