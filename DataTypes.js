@@ -73,3 +73,57 @@ var personDataA = { name: "Ahsan Ali" };
 var personDataB = { age: 21 };
 var personDataC = { name: "Ahsan", age: 21 };
 console.log(personDataA.name, personDataB.age, personDataC.name, personDataC.age);
+;
+;
+var dataA = {
+    name: "Ahsan Ali",
+    age: 21
+};
+console.log(dataA.age, dataA.name);
+// Enum Types 
+var WhoTypes;
+(function (WhoTypes) {
+    WhoTypes["student"] = "student";
+    WhoTypes["Teacher"] = "Teacher";
+    WhoTypes["Managment"] = "Managment";
+    WhoTypes["Staff"] = "Staff";
+})(WhoTypes || (WhoTypes = {}));
+var who = WhoTypes.student;
+console.log(who);
+var Roles;
+(function (Roles) {
+    Roles[Roles["admin"] = 0] = "admin";
+    Roles[Roles["manager"] = 1] = "manager";
+    Roles[Roles["staff"] = 2] = "staff";
+    Roles[Roles["clerk"] = 3] = "clerk";
+})(Roles || (Roles = {}));
+var userRole = Roles.admin;
+// console.log(userRole);
+// Classes Object Oriented 
+var Product = /** @class */ (function () {
+    function Product(name, price, PId) {
+        this.InCart = false;
+        this.IsOrdered = false;
+        this.name = name;
+        this.price = price;
+        this.PId = PId;
+    }
+    Product.prototype.addToCart = function () {
+        this.InCart = true;
+    };
+    Product.prototype.buyProduct = function () {
+        if (this.InCart) {
+            console.log("Product ".concat(this.name, " is Ordered in ").concat(this.price));
+        }
+        else {
+            console.log("No Product in Cart");
+        }
+    };
+    return Product;
+}());
+var product = new Product("Samsung", 10000, 1234);
+product.addToCart();
+console.log(product.buyProduct());
+var product = new Product("Iphone", 20000, 2234);
+product.addToCart();
+console.log(product.buyProduct());

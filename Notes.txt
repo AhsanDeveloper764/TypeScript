@@ -113,3 +113,17 @@ Interface Concept
 An interface is a way to define the structure of an Object,Funtion etc
 
 InterSection Type Allow you to Combine multiple types into one.
+
+the differnce b/w union and intersection 
+intersection combine krta hay data types ko 
+ek variable ek se zyada types accept kar sakta hai
+
+Enum Types
+A Data types that allows you to define a set of named constant 
+
+What is Classes
+A class in TypeScript is a blueprint for creating objects with properties and methods using type safety.
+
+Access Modifier 
+What is Access Modifier
+Public Private Protected    

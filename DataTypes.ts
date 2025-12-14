@@ -105,8 +105,11 @@ const stdData:std={
 }
 
 // InterSection Type
-type A = {name:string}
-type B = {age:number}
+// type A = {name:string}
+// type B = {age:number}
+// interface say bhi krskatay ho 
+interface A {name:string}
+interface B {age:number}
 type C = A & B
 
 const personDataA:A={name:"Ahsan Ali"}
@@ -116,3 +119,69 @@ const personDataC:C={name:"Ahsan",age:21}
 console.log(personDataA.name , personDataB.age , personDataC.name
     ,personDataC.age
 );
+
+// Difference Between Types and Interface
+// type mai ap union krletay ho interface mai ap union nhi krtay ho
+// interface kay sath ap extends use krsktay ho type kay sath nhi 
+
+type DataTypes = {name:string , age:number}
+interface a {name:string};
+interface b  extends a {age:number};
+
+const dataA:DataTypes = {
+    name:"Ahsan Ali",
+    age:21
+}
+
+console.log(dataA.age,dataA.name);
+
+// Enum Types 
+enum WhoTypes{
+    student="student",
+    Teacher="Teacher",
+    Managment="Managment",
+    Staff="Staff",
+}
+var who:WhoTypes=WhoTypes.student 
+console.log(who);
+
+enum Roles {
+    admin,
+    manager,
+    staff,
+    clerk
+}
+
+const userRole:Roles=Roles.admin
+// console.log(userRole);
+
+// Classes Object Oriented 
+class Product {
+    name:string;
+    price:number;
+    PId:number;
+    InCart=false;
+    IsOrdered=false;
+    constructor (name:string,price:number,PId:number){
+        this.name = name
+        this.price=price
+        this.PId = PId
+    }
+    addToCart():void{
+        this.InCart=true;
+    }
+    buyProduct(){
+        if(this.InCart){
+            console.log(`Product ${this.name} is Ordered in ${this.price}`);
+        }else{
+            console.log("No Product in Cart");
+        }
+    }
+}
+var product = new Product("Samsung",10000,1234)
+product.addToCart()
+console.log(product.buyProduct());
+
+var product = new Product("Iphone",20000,2234)
+product.addToCart()
+console.log(product.buyProduct());
