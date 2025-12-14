@@ -125,5 +125,7 @@ What is Classes
 A class in TypeScript is a blueprint for creating objects with properties and methods using type safety.
 
 Access Modifier 
-What is Access Modifier
-Public Private Protected    
+There are three types of Access Modifier
+Public khi bhi accessible 
+Private sirf usee class mai accessible 
+Protected sirf us kee child class mai     

@@ -1,3 +1,18 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 // Number Data type
 var number1 = 10;
 var number2 = 20;
@@ -121,9 +136,24 @@ var Product = /** @class */ (function () {
     };
     return Product;
 }());
+var Order = /** @class */ (function (_super) {
+    __extends(Order, _super);
+    function Order() {
+        return _super.call(this, "Laptop", 100000, 123) || this;
+    }
+    Order.prototype.getPrice = function () {
+        return this.price;
+    };
+    return Order;
+}(Product));
 var product = new Product("Samsung", 10000, 1234);
 product.addToCart();
 console.log(product.buyProduct());
 var product = new Product("Iphone", 20000, 2234);
 product.addToCart();
 console.log(product.buyProduct());
+var order = new Order();
+console.log(order.getPrice());
+// parent class say child class mai jab value pass kreingay 
+// tw wo protected ya public honi chaiye magar private nhi hona 
+// chaiye 

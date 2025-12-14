@@ -157,8 +157,8 @@ const userRole:Roles=Roles.admin
 
 // Classes Object Oriented 
 class Product {
-    name:string;
-    price:number;
+    protected name:string;
+    protected price:number;
     PId:number;
     InCart=false;
     IsOrdered=false;
@@ -178,6 +178,16 @@ class Product {
         }
     }
 }
+
+class Order extends Product {
+    constructor(){
+        super("Laptop",100000,123)
+    }
+    getPrice(){
+        return this.price
+    }
+}
+
 var product = new Product("Samsung",10000,1234)
 product.addToCart()
 console.log(product.buyProduct());
@@ -185,3 +195,12 @@ console.log(product.buyProduct());
 var product = new Product("Iphone",20000,2234)
 product.addToCart()
 console.log(product.buyProduct());
+
+
+const order = new Order()
+console.log(order.getPrice());
+
+
+// parent class say child class mai jab value pass kreingay 
+// tw wo protected ya public honi chaiye magar private nhi hona 
+// chaiye 
