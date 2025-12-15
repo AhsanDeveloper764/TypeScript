@@ -157,3 +157,78 @@ console.log(order.getPrice());
 // parent class say child class mai jab value pass kreingay 
 // tw wo protected ya public honi chaiye magar private nhi hona 
 // chaiye 
+// Inheritance 
+var Auth = /** @class */ (function () {
+    function Auth() {
+    }
+    Auth.prototype.login = function (name, password) {
+        if (name && password) {
+            return "Student Login";
+        }
+        else {
+            return "Please Login First";
+        }
+    };
+    return Auth;
+}());
+var Student = /** @class */ (function (_super) {
+    __extends(Student, _super);
+    function Student() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Student.prototype.Result = function (marks) {
+        if (marks >= 33) {
+            return "pass";
+        }
+        else {
+            return "fail";
+        }
+    };
+    return Student;
+}(Auth));
+var Teacher = /** @class */ (function (_super) {
+    __extends(Teacher, _super);
+    function Teacher() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Teacher.prototype.Subject = function (Progress) {
+        if (Progress = "Good") {
+            return "Hired";
+        }
+        else {
+            return "Sorry Someone get this position!";
+        }
+    };
+    return Teacher;
+}(Auth));
+var valueA = new Student();
+console.log(valueA.login("Ahsan", "asbajsh"));
+console.log(valueA.Result(60));
+var valueB = new Teacher();
+console.log(valueA.login("Ahsan", "asbajsh"));
+console.log(valueB.Subject("Good"));
+// Getter and setter Example
+var Employee = /** @class */ (function () {
+    function Employee() {
+        this._salary = 0;
+    }
+    Object.defineProperty(Employee.prototype, "salary", {
+        get: function () {
+            return this._salary;
+        },
+        set: function (amount) {
+            if (amount <= 0) {
+                console.log("Salary must be greater than Zero");
+            }
+            else {
+                this._salary = amount;
+            }
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return Employee;
+}());
+var emp = new Employee();
+emp.salary = 50000;
+console.log("Employee Salary", emp.salary);

@@ -199,8 +199,67 @@ console.log(product.buyProduct());
 
 const order = new Order()
 console.log(order.getPrice());
-
-
 // parent class say child class mai jab value pass kreingay 
 // tw wo protected ya public honi chaiye magar private nhi hona 
 // chaiye 
+
+
+// Inheritance 
+class Auth {
+    login(name:string,password:string){
+        if(name && password){
+            return `Student Login`
+        }else{
+            return `Please Login First`
+        }
+    }
+}
+
+class Student extends Auth {
+    Result(marks:number){
+        if(marks>=33){
+            return `pass`
+        }else{
+            return `fail`
+        }
+    }
+}
+
+class Teacher extends Auth {
+    Subject(Progress:string){
+        if(Progress="Good"){
+            return `Hired`
+        }else{
+            return `Sorry Someone get this position!`
+        }
+    }
+}
+
+const valueA = new Student()
+console.log(valueA.login("Ahsan","asbajsh"));
+console.log(valueA.Result(60));
+
+const valueB = new Teacher()
+console.log(valueA.login("Ahsan","asbajsh"));
+console.log(valueB.Subject("Good"));
+
+// Getter and setter Example
+class Employee {
+    private _salary: number=0;
+    
+    get salary():number{
+        return this._salary
+    }
+
+    set salary(amount:number){
+        if(amount<=0){
+            console.log("Salary must be greater than Zero");
+        }else{
+            this._salary = amount;
+        }
+    }
+} 
+
+const emp = new Employee()
+emp.salary = 50000;
+console.log("Employee Salary",emp.salary);

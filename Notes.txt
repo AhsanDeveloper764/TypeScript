@@ -128,4 +128,19 @@ Access Modifier
 There are three types of Access Modifier
 Public khi bhi accessible 
 Private sirf usee class mai accessible 
-Protected sirf us kee child class mai     
+Protected sirf us kee child class mai
+
+Inheritance
+PARENT Class kee property jo hay wo child class ma extend krna 
+isko inheritance khtay hein
+1 common functionality classs kee kisi bhee jagah use krsktay hein
+
+What is Module 
+Self_contained unit of code that encapsulate related Functionalities
+,such as classes , function and variables
+with the help of module uou can easily transfer one file in another file
+
+Getter and setter
+Getter property ki value read karne ke liye aur Setter value 
+update karne ke liye use hota hai with validation, without 
+exposing internal data directly.
