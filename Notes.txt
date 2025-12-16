@@ -169,3 +169,13 @@ KeyOf Concept
 The keyof Keyword in ts used to get the key of a type as a union
 of string it is primarily used for type safely when working with
 objects 
+
+Keyof Concept (Easy Words)
+keyof TypeScript ka ek keyword hai.
+Iska kaam hai: object ke keys ko type ke form mein lena.
+Ye type-safe code likhne me help karta hai.
+
+Easy Explanation
+keyof Person → matlab Person ke keys ka union type
+"name" | "age" | "isStudent"
+Function me sirf keys allow hongi, koi random string nahi → type safe

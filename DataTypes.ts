@@ -319,7 +319,7 @@ type PersonT={
     isEmp:boolean
 }
 
-type personDataX = keyof PersonT;
+type personDataX =keyof PersonT;
 const functName = (obj:PersonT,key:personDataX) => {
     return obj[key];
 }
