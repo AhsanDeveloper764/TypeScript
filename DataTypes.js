@@ -232,3 +232,15 @@ var Employee = /** @class */ (function () {
 var emp = new Employee();
 emp.salary = 50000;
 console.log("Employee Salary", emp.salary);
+var AllData = /** @class */ (function () {
+    function AllData(username, roll_no) {
+        this.name = username;
+        this.roll_no = roll_no;
+    }
+    AllData.prototype.displayName = function () {
+        console.log("Hello World");
+    };
+    return AllData;
+}());
+var val = new AllData("Karachi College", 226);
+console.log("val", val);

@@ -144,3 +144,16 @@ Getter and setter
 Getter property ki value read karne ke liye aur Setter value 
 update karne ke liye use hota hai with validation, without 
 exposing internal data directly.
+
+Interface:
+Interface aik blueprint / rule hota hai jo batata hai ke object 
+ya class ke andar kya cheezen honi chahiye, lekin kaise kaam 
+karein gi ye define nahi karta.
+
+Static Keywords kee help say ap class kee property method 
+or function ko static bana sktay ho jis cheez ko bhi 
+static bnahogay wo us class ka hee part rhagee instance ka 
+part nhee rhagee iskay 2 benefits hotay hein one is memory 
+Efficiency achee rhatee hay agar ap kisi instance kay sath 
+property ya method ko bind krtay ho tw wha apki memory zyada 
+consume hotee hay ba nisbat static keyword kay     

@@ -263,3 +263,28 @@ class Employee {
 const emp = new Employee()
 emp.salary = 50000;
 console.log("Employee Salary",emp.salary);
+
+
+// Interface 
+interface stdData {
+    name:string,
+    roll_no:number,
+    displayName():void;
+    // Function ka kaam sirf task perform karna hota hai (jaise print, log, update),
+    // koi value wapas nahi deta.
+}
+
+class AllData implements stdData {
+    name:string;
+    roll_no:number;
+    constructor(username:string,roll_no:number){
+        this.name=username
+        this.roll_no = roll_no
+    }
+    displayName():void{
+        console.log("Hello World");
+    }
+}
+
+const val = new AllData("Karachi College",226)
+console.log("val",val);
