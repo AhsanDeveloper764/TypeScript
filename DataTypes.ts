@@ -302,10 +302,34 @@ console.log(xyz.name);
 
 
 // Generic Types
-const friuts = <T> (name:T):void => {
-    console.log(name);
+const friuts = <T> (name:T):T => {
+    return name
+}
+// Basiacally ismay type hamari maintain horhi hay 
+let frt = friuts("apple")
+let num = friuts(12345)
+let bool = friuts(true)
+
+console.log(typeof frt,num,bool);
+
+// KeyOf
+type PersonT={
+    name:string,
+    age:number,
+    isEmp:boolean
 }
 
-friuts("apple")
-friuts(12345)
-friuts(true)
+type personDataX = keyof PersonT;
+const functName = (obj:PersonT,key:personDataX) => {
+    return obj[key];
+}
+
+const person = {name:"ahsan",age:21,isEmp:true}
+console.log(functName(person,"name")); // ahsan
+console.log(functName(person,"age")); // 21
+
+
+// Why we write type at the start?
+// TypeScript me type ek keyword hai
+// Ye custom type banane ke liye use hota hai.
+// Jaise interface object structure define karta hai, waise hi type bhi define karta hai ek type alias ke liye.

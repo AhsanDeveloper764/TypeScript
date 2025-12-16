@@ -256,8 +256,20 @@ var xyz = new car("Ahsan");
 console.log(xyz.name);
 // Generic Types
 var friuts = function (name) {
-    console.log(name);
+    return name;
 };
-friuts("apple");
-friuts(12345);
-friuts(true);
+// Basiacally ismay type hamari maintain horhi hay 
+var frt = friuts("apple");
+var num = friuts(12345);
+var bool = friuts(true);
+console.log(typeof frt, num, bool);
+var functName = function (obj, key) {
+    return obj[key];
+};
+var person = { name: "ahsan", age: 21, isEmp: true };
+console.log(functName(person, "name")); // ahsan
+console.log(functName(person, "age")); // 21
+// Why we write type at the start?
+// TypeScript me type ek keyword hai
+// Ye custom type banane ke liye use hota hai.
+// Jaise interface object structure define karta hai, waise hi type bhi define karta hai ek type alias ke liye.

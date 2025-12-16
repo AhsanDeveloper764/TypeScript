@@ -164,3 +164,8 @@ Sirf ek hi copy memory me store hoti hai → memory efficient.
 Generic kee help say ap create krsktay ho resuable components 
 jo kay work krtay hein variety of datatypes kay sath type safety 
 ka dehan rkhatay huay 
+
+KeyOf Concept
+The keyof Keyword in ts used to get the key of a type as a union
+of string it is primarily used for type safely when working with
+objects 
