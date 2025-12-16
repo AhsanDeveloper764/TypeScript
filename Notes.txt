@@ -11,10 +11,10 @@ Code Quality
 Important Typescript features
 Define Data types 
 Interfaces
-Decorators
 Generics
-Namespace
 Type Inference
+Decorators
+Namespace
 Advance features
 Code Quality
 Etc
