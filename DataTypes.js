@@ -244,3 +244,20 @@ var AllData = /** @class */ (function () {
 }());
 var val = new AllData("Karachi College", 226);
 console.log("val", val);
+// Static Keyword
+var car = /** @class */ (function () {
+    function car(name) {
+        this.name = name;
+    }
+    return car;
+}());
+var xyz = new car("Ahsan");
+// console.log(xyz.name); Error return if property is static
+console.log(xyz.name);
+// Generic Types
+var friuts = function (name) {
+    console.log(name);
+};
+friuts("apple");
+friuts(12345);
+friuts(true);

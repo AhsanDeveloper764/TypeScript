@@ -150,10 +150,17 @@ Interface aik blueprint / rule hota hai jo batata hai ke object
 ya class ke andar kya cheezen honi chahiye, lekin kaise kaam 
 karein gi ye define nahi karta.
 
-Static Keywords kee help say ap class kee property method 
-or function ko static bana sktay ho jis cheez ko bhi 
-static bnahogay wo us class ka hee part rhagee instance ka 
-part nhee rhagee iskay 2 benefits hotay hein one is memory 
-Efficiency achee rhatee hay agar ap kisi instance kay sath 
-property ya method ko bind krtay ho tw wha apki memory zyada 
-consume hotee hay ba nisbat static keyword kay     
+Static Keyword Easy Explanation
+Jab aap static use karte ho class ke property ya method ke saath, 
+iska matlab hai
+Ye property ya method class ka part hai, instance (object) ka nahi.
+Aapko object banaye bina bhi class ke static property/method ko 
+use kar sakte ho.
+Agar aap normal property/method use karte ho
+Har object banane pe alag memory allocate hoti hai.
+Agar aap static property/method use karte ho
+Sirf ek hi copy memory me store hoti hai → memory efficient.
+
+Generic kee help say ap create krsktay ho resuable components 
+jo kay work krtay hein variety of datatypes kay sath type safety 
+ka dehan rkhatay huay 

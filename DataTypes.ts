@@ -288,3 +288,24 @@ class AllData implements stdData {
 
 const val = new AllData("Karachi College",226)
 console.log("val",val);
+
+// Static Keyword
+class car {
+    name:string;
+    constructor(name:string){
+        this.name = name
+    }
+}
+const xyz = new car("Ahsan");
+// console.log(xyz.name); Error return if property is static
+console.log(xyz.name);
+
+
+// Generic Types
+const friuts = <T> (name:T):void => {
+    console.log(name);
+}
+
+friuts("apple")
+friuts(12345)
+friuts(true)
