@@ -179,3 +179,4 @@ Easy Explanation
 keyof Person → matlab Person ke keys ka union type
 "name" | "age" | "isStudent"
 Function me sirf keys allow hongi, koi random string nahi → type safe
+
